@@ -7,7 +7,7 @@ url (POST) : http://<ip>:3000/user/register,
 body: { 
         "user":"sachin",
         "password":"sachin123",
-        "email":"sachindevamore@gmail.com"
+        "email":"email@gmail.com"
 }
 **************************************
 # Login
@@ -15,11 +15,11 @@ url (POST) : http://<ip>:3000/user/login
 req.body   : {
         "user":"sachin",
         "password":"sachin123",
-        "email":"sachindevamore@gmail.com"
+        "email":"email@gmail.com"
 }
 res.body :
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoic2FjaGluIiwicGFzc3dvcmQiOiJzYWNoaW4xMjMiLCJlbWFpbCI6InNhY2hpbmRldmFtb3JlIiwiaWF0IjoxNjI5NjE2NzI1LCJleHAiOjE2Mjk2MjAzMjV9.l_g3EBnBw9lI2fzarMag1nLbIwW1J9tLtlOpanANY5o",
+    "token": jwt-Token
     "msg": "Successfully Logged In"
 }
 **************************************
@@ -31,7 +31,7 @@ query : {
 res.body : {
         "user":"sachin",
         "password":"sachin123",
-        "email":"sachindevamore@gmail.com"
+        "email":"email@gmail.com"
 }
 ***************************************
 # Edit User
