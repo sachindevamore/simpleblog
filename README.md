@@ -1,6 +1,6 @@
 # home page
 **************************************
-url (GET)  : http://<ip>:3000/user/register
+url (GET)  : http://<ip>:3000/
 **************************************
 # Register user
 * Registration of user takes
