@@ -11,6 +11,7 @@ router.use(fn.tokenValidate);
 
 router.post('/register', fn.bodyValidate, async (req, res) => {
     try {
+        //comment by b2
         let User: USER = { ...req.body };
         let d = `{"${User.user}" : ${JSON.stringify(User)}}`;
         let json: any = await fn.readDB();
