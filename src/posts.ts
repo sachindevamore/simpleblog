@@ -15,6 +15,7 @@ router.post('/post', async (req, res) => {
         console.log('post - ', json);
         fn.writeDB(json);
         res.send("Blog is added successfully");
+        //comment by b1
     } catch (e) {
         res.status(400).send("IMPROPER_DATA::" + e.message);
     }
