@@ -8,6 +8,7 @@ router.post('/post', async (req, res) => {
     try {
         //hear is small comment by sachin
         let currUser: string = req.body.cur_user;
+        // commit by b2
         if (!req.body.post || !req.body.title || !req.body.postid) throw new Error("Missing of post | titile");
         let json = await fn.readDB();
         !json[currUser]['posts'] && (json[currUser] = { ...json[currUser], "posts": {} });
