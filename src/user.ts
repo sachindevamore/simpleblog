@@ -4,7 +4,8 @@ const router = express.Router();
 import { fn } from './helper'
 
 router.use(fn.tokenValidate);
-// comment by branch2
+// comment by branch1
+// again one commit
 type USER = { user: string, password: string, email: string };
 
 router.use(fn.tokenValidate);
